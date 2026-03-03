@@ -1,0 +1,34 @@
+#wrap {}
+#wrap * {transition: all 0.3s;}
+#wrap .container {
+    min-width: 320px;
+} /* 공통 */
+/* mobile design - .sponosor_btn */
+#wrap .container .sponsor_btn {   
+    width: 164px; height: 41px;
+    display: block;
+    border-radius: 37.5px;
+    background: linear-gradient(90deg, #fe9300,#ff7300);
+    display:flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center; 
+    gap:10px; 
+    margin: 0 auto;
+}
+#wrap .container .sponsor_btn:hover::after {
+    animation:x4 0.4s linear alternate infinite;
+    font-weight:600;
+}
+@keyframes x4 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(4px);}
+}
+#wrap .container .sponsor_btn::after {
+    content:'>'; display: block;
+    font-size:0.75rem; /* 글자이기때문에 크기높이가 아닌 폰트사이즈 */ 
+    color: #fff; 
+    transition: font-weight 0.3s;
+}   
+#wrap .container .sponsor_btn em {
+    color: #fff;
+    font-weight: 500;
+}
