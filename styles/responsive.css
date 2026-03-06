@@ -5,9 +5,37 @@
     #wrap .quiz_bg .quiz > * {flex:1;} /* 반반비율 */
 }
 @media screen and (min-width: 860px) {
+/* 1행 */
     #wrap .intro {padding: 300px 0 100px;}
-}
-/* 860~1023 */
+/* 2행 */
+    #wrap .quiz_bg {padding: 150px 80px;}
+    #wrap .quiz_bg .quiz .quiz_list > * {margin-bottom:0;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {
+        font-size: 2.5rem; margin-bottom: 56px;
+    }
+    #wrap .quiz_bg .quiz .quiz_list h2 span {
+        display:inline-block; margin-bottom: 16px; font-size: 1.25rem;}
+    #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+        font-size:1.25rem; line-height: 2;
+        background-size: 28px; display: block;
+    }
+    #wrap .quiz_bg .quiz .quiz_status {margin: 56px 0 0 100px;}
+/* 3행 */
+    #wrap .video_bg .video h1 {margin:0 0 70px;}
+    #wrap .video_bg .video iframe {height: 484px;}
+/* 5행 */
+    #wrap .humanity_bg .humanity .list {flex-flow: row nowrap;}
+    #wrap .humanity_bg .humanity li {flex:1}
+    #wrap .humanity_bg .humanity .list li dl dt {font-size: 2.69rem;}
+    #wrap .humanity_bg .humanity .list li dl dd {font-size: 1rem;}
+    /* 텍스트에 따라 크기가 달라지면 안되니까 이런경우에는 높이를 줘야함 */
+    #wrap .humanity_bg .humanity .list li .txt {height: 250px;} 
+    #wrap .humanity_bg .humanity .list li .txt p {font-size: 1rem;}
+/* 3-6행 공통 */
+    #wrap .container {padding: 200px 80px;}
+    #wrap .container .contents h1 {font-size: 2.5rem; margin: 0 0 40px;}
+    #wrap .container .contents h1+p {font-size: 1.38rem;}
+}/* 860~1023 */
 @media screen and (min-width:1024px) {
 /* 1행 */
     #wrap .intro {padding: 410px 0 100px;}
@@ -16,21 +44,25 @@
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
-/* 2행 */
-    #wrap .quiz_bg {padding: 150px;}
-    #wrap .quiz_bg .quiz .quiz_list {margin-bottom: 93.91px;}
-    #wrap .quiz_bg .quiz .quiz_list > * {margin-bottom:0;}
-    #wrap .quiz_bg .quiz .quiz_list h1 {
-        font-size: 2.5rem; margin-bottom: 56px;
+/* 8행 */
+    #wrap .activity_bg .activity h1 {margin: 0 236.5px 83px;}
+    #wrap .activity_bg .activity .details {
+    grid-template-areas: 
+        'public nature'
+        'corporation nature';
+    grid-template-columns: 1fr 1fr;
     }
-    #wrap .quiz_bg .quiz .quiz_list h2 span {
-    display:inline-block; margin-bottom: 16px; font-size: 1.25rem;
-}
-#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
-    font-size:1.25rem; line-height: 2;
-    background-size: 28px; display: block;
-}
-#wrap .quiz_bg .quiz .quiz_status {margin: 56px 0 0 100px;}
+    #wrap .activity_bg .activity .details li {
+        position: relative; padding: 111px 0 22px 0;
+    }
+    #wrap .activity_bg .activity .details li:last-child .txt {
+        position: absolute; left: 0; bottom: 30px;
+    }
+    #wrap .activity_bg .activity .details li .txt {
+        width: 60%;
+    }
+    #wrap .activity_bg .activity .details li .txt dt {font-size: 2.13rem;}
+    #wrap .activity_bg .activity .details li .txt dd {font-size: 1.25rem;}
 } /* 1024~1249 */
 @media screen and (min-width:1250px) {
 /* 1행 */
@@ -43,4 +75,19 @@
     #wrap .container .sponsor_btn em {font-size: 2.13rem;}
     #wrap .container .sponsor_btn::after {font-size: 2rem;}
 /* 2행 */
+    #wrap .quiz_bg {padding: 150px 335px;}
+    #wrap .quiz_bg .quiz .quiz_list > * {margin-bottom:0;}
+    #wrap .quiz_bg .quiz .quiz_list h1 {
+        font-size: 3.44rem; margin-bottom: 38px;
+    }
+/* 3행 */
+    #wrap .video_bg .video iframe {height: 600px;}
+/* 5행 */
+    #wrap .humanity_bg .humanity .list li dl dt {font-size: 3.44rem;}
+    #wrap .humanity_bg .humanity .list li dl dd {font-size: 1.25rem;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size: 1.25rem;}
+/* 3-6행 공통 */
+    #wrap .container {padding: 200px 335px;}
+    #wrap .container .contents h1 {font-size: 3.44rem; margin: 0 0 70px;}
+    #wrap .container .contents h1+p {font-size: 2.13rem;}
 } /* 1250~ */
