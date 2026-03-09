@@ -232,4 +232,51 @@
     font-size: 0.81rem; color: #fff;
 }
 /* <!-- 9행 선물정보--> */
+#wrap .gift_bg {background-image: url(../images/decrese_bg.png);}
+#wrap .gift_bg .gift {text-align: center;}
+#wrap .gift_bg .gift .title {
+    display: flex; flex-flow: column nowrap;
+}
+#wrap .gift_bg .gift .title h1 {color: #fff; text-align: left;}
+#wrap .gift_bg .gift .title .sponsor_btn {margin: 0;}
+#wrap .gift_bg .gift .title .sponsor_btn em {}
+#wrap .gift_bg .gift ul {
+    margin: 40px 0;
+    display: grid; gap: 13px;
+    grid-template-areas: 
+        'two'
+        'three'
+        'five';
+}
+#wrap .gift_bg .gift ul li {}
+#wrap .gift_bg .gift ul li:nth-child(1) {
+    grid-area: two;
+}
+#wrap .gift_bg .gift ul li:nth-child(2) {
+    grid-area: three;
+}
+#wrap .gift_bg .gift ul li:nth-child(3) {
+    grid-area: five;
+}
+#wrap .gift_bg .gift ul li h2 {color: #fff; line-height: 1.7;}
+#wrap .gift_bg .gift ul li p {color: #fff; line-height: 1.7;}
+#wrap .gift_bg .gift ul li .photo {
+    height: 150px; 
+    overflow: hidden; /* 이미지넘친부분 숨겨줘야함..크기 */
+    margin-bottom: 13px; 
+}
+#wrap .gift_bg .gift ul li .photo img {
+    width: 100%;
+    transform: translateY(-85px); /* 이미지 위치 조정 */
+}
+#wrap .gift_bg .gift .benefit {
+    background-color: #fff; color: #050505;  display: inline-block;
+}
 /* <!-- 10행 안내  --> */
+#wrap .info_bg {background-color: #e4e5ea;}
+#wrap .info_bg .info {}
+#wrap .info_bg .info dt {
+    font-size: 1.38rem; font-weight: 500;
+    line-height: 1.7;
+}
+#wrap .info_bg .info dd{line-height: 1.7; color: #050505;}
